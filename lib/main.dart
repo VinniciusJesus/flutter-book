@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'widgets/banner_widget.dart';
+import 'widgets/backdrop_filter_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -36,11 +36,8 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [BannerWidget()],
-      ),
+      backgroundColor: Colors.black,
+      body: BackdropFilterWidget(),
     );
   }
 }
